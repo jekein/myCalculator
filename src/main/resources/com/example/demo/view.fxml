@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="320.0" style="-fx-background-color: #7086a1;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CalculatorController">
+   <Label alignment="BOTTOM_RIGHT" contentDisplay="TEXT_ONLY" layoutX="187.0" layoutY="12.0" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #ffff;" textAlignment="RIGHT">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="152.0" layoutY="12.0" prefHeight="38.0" prefWidth="23.0" style="-fx-background-color: #ffff;" />
+    <Label fx:id="expression" alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" layoutX="21.0" layoutY="12.0" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="183.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="12.0">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font></Label>
+    <Label layoutX="172.0" layoutY="22.0" prefHeight="20.0" prefWidth="23.0" text=" =">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+    <Label fx:id="result" contentDisplay="TEXT_ONLY" layoutX="195.0" layoutY="12.0" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #ffff;" textAlignment="RIGHT">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font></Label>
+    <Button layoutX="22.0" layoutY="156.0" mnemonicParsing="false" onAction="#onOneButtonClick" text="1" />
+    <Button layoutX="55.0" layoutY="156.0" mnemonicParsing="false" onAction="#onTwoButtonClick" text="2" />
+    <Button layoutX="86.0" layoutY="156.0" mnemonicParsing="false" onAction="#onThreeButtonClick" text="3" />
+    <Button layoutX="22.0" layoutY="124.0" mnemonicParsing="false" onAction="#onFourButtonClick" text="4" />
+    <Button layoutX="55.0" layoutY="124.0" mnemonicParsing="false" onAction="#onFiveButtonClick" text="5" />
+    <Button layoutX="86.0" layoutY="124.0" mnemonicParsing="false" onAction="#onSixButtonClick" text="6" />
+    <Button layoutX="22.0" layoutY="92.0" mnemonicParsing="false" onAction="#onSevenButtonClick" text="7" />
+    <Button layoutX="55.0" layoutY="92.0" mnemonicParsing="false" onAction="#onEightButtonClick" text="8" />
+    <Button layoutX="86.0" layoutY="92.0" mnemonicParsing="false" onAction="#onNineButtonClick" text="9" />
+    <Button layoutX="22.0" layoutY="189.0" mnemonicParsing="false" onAction="#onZeroButtonClick" prefHeight="26.0" prefWidth="57.0" text="0" />
+    <Button layoutX="234.0" layoutY="189.0" mnemonicParsing="false" onAction="#onEqualsButtonClick" prefHeight="26.0" prefWidth="72.0" text="=" />
+    <Button layoutX="152.0" layoutY="189.0" mnemonicParsing="false" onAction="#onPlusButtonClick" prefHeight="26.0" prefWidth="72.0" text="+" />
+   <Button layoutX="152.0" layoutY="155.0" mnemonicParsing="false" onAction="#onMinusButtonClick" prefHeight="26.0" prefWidth="72.0" text="-" />
+   <Button layoutX="152.0" layoutY="123.0" mnemonicParsing="false" onAction="#onMultiButtonClick" prefHeight="26.0" prefWidth="72.0" text="*" />
+   <Button layoutX="152.0" layoutY="92.0" mnemonicParsing="false" onAction="#onDivideButtonClick" prefHeight="26.0" prefWidth="72.0" text="/" />
+   <Button layoutX="234.0" layoutY="155.0" mnemonicParsing="false" onAction="#onFactButtonClick" prefHeight="26.0" prefWidth="72.0" text="!" />
+   <Button layoutX="234.0" layoutY="123.0" mnemonicParsing="false" onAction="#onSqrButtonClick" prefHeight="26.0" prefWidth="72.0" text="^" />
+   <Button layoutX="86.0" layoutY="189.0" mnemonicParsing="false" onAction="#onCommaButtonClick" prefHeight="26.0" prefWidth="23.0" text="," />
+   <Button layoutX="62.0" layoutY="59.0" mnemonicParsing="false" onAction="#onAllClearButtonClick" prefHeight="26.0" prefWidth="48.0" text="AC" />
+   <Button layoutX="234.0" layoutY="92.0" mnemonicParsing="false" onAction="#onSqrtButtonClick" prefHeight="26.0" prefWidth="72.0" text="#" />
+   <Button layoutX="22.0" layoutY="59.0" mnemonicParsing="false" onAction="#onBackspaceButtonClick" prefHeight="26.0" prefWidth="34.0" text="&lt;--" />
+</AnchorPane>
